@@ -221,8 +221,6 @@ export const useGameLogic = () => {
 
     useEffect(() => {
         initializeBoard();
-        const savedHighScore = localStorage.getItem('candyCrushHighScore');
-        if (savedHighScore) setHighScore(parseInt(savedHighScore, 10));
     }, [initializeBoard]);
 
     const handleCandyClick = useCallback((row: number, col: number) => {
@@ -305,7 +303,6 @@ export const useGameLogic = () => {
             setIsGameOver(true);
             if (score > highScore) {
                 setHighScore(score);
-                localStorage.setItem('candyCrushHighScore', score.toString());
             }
         }
     }, [movesLeft, score, highScore, isProcessing]);
