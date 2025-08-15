@@ -1,0 +1,5 @@
+{
+  "name": "KARI",
+  "description": "A production-level, visually appealing Candy Crush-like game built with React, TypeScript, and Tailwind CSS. Features power-ups, a modular structure, persistent scoring, levels, and smooth animations.",
+  "requestFramePermissions": []
+}
